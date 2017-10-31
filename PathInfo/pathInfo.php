@@ -5,11 +5,9 @@ class _pathInfo {
 		$isStart = array();
 		foreach ($path as $key => $val) 
 		{
-			echo $key.': '.$val->to.'<br>';
 			$isStart[$key]++;
 			$isStart[$val->to]--;
 		}
-		print_r($isStart);
 		foreach ($path as $val) {
 			if ($val == 1) {
 				return $key;
